@@ -23,7 +23,7 @@ p {
 .container {
     width: calc(100% - 32px);
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 section h1 {
@@ -55,7 +55,7 @@ header .container {
     align-items: center;
 }
 
-header h1 {
+header h1, nav {
     font-size: 28px;
     font-weight: 800;
 }
@@ -214,6 +214,8 @@ header h1 {
 .hero .pic {
     margin: 0 auto;
 }
+
+
 /* features */
 .features {
     padding: 64px 0;
@@ -236,6 +238,12 @@ header h1 {
     padding: 8px;
 }
 
+.okashi {
+  border-bottom: #000 1px solid;
+  font-weight: bold;
+  margin-left: 6px;
+}
+
 /* activities */
 .activities {
     padding: 64px 0;
@@ -249,6 +257,7 @@ header h1 {
 .activity img {
     width: 250px;
     height: auto;
+    margin-top: 32px;
 }
 
 /* voices */
@@ -290,6 +299,15 @@ header h1 {
     margin-top: 16px;
 }
 
+.composition .container {
+  display: block;
+}
+
+.composition .container div {
+  width: auto;
+}
+
+
 /* sns */
 
 .sns {
@@ -313,6 +331,14 @@ header h1 {
 .form a {
     border-bottom: #000 solid 2px;
     font-size: 24px;
+}
+
+.form .container {
+  display: block;
+}
+
+.form .container div {
+  width: auto;
 }
 
 /* call-to-action */
@@ -340,6 +366,27 @@ header h1 {
 
  /* large screen */
   
-@media (min-width:600) {
-    
+.tablet-link {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .tablet-link {
+    display: inline;
+    font-size: 20px;
+  }
+}
+
+
+@media (min-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .activity {
+    width: 50%;
+  }
 }
